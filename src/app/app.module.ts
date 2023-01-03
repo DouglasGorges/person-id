@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { StoreModule } from '@ngrx/store';
 
 @NgModule({
   declarations: [
@@ -10,7 +12,11 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
+    MatSlideToggleModule,
+
+    StoreModule.forRoot({}, {})
   ],
   providers: [],
   bootstrap: [AppComponent]
