@@ -7,7 +7,4 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent {
   title = 'person-id';
-idade = '1 ano, 6 meses';
-
-  
 }
